@@ -1,3 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+/* apply a natural box layout model to all elements, but allowing components to change */ 
+html { 
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/ 
+} 
+@media (min-width: 2600px ) {
+    html{
+        font-size: 100%; /*1rem = */
+    }
+    }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*{
+    font-size: 1.6rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* utilidades */
+.contenedor{
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%;
+}
+img{
+    max-width: 100%;
+}
 .header{
     position: fixed;
     width: 100%;
