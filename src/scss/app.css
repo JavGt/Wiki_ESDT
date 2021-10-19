@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+/* apply a natural box layout model to all elements, but allowing components to change */ 
+html { 
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/ 
+} 
+@media (min-width: 2600px ) {
+    html{
+        font-size: 100%; /*1rem = */
+    }
+    }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*{
+    font-size: 1.6rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* utilidades */
+.conteiner{
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%;
+}
+img{
+    max-width: 100%;
+}
+.header{
+    position: fixed;
+    width: 100%;
+}
+.header__contenido{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: .7s;
+    padding: 3rem 0;
+    align-items: center;
+    z-index: 1;
+}
+
+.header__Titulo{
+    color: rgb(252, 252, 252);
+    letter-spacing: .5rem;
+    font-weight: bold;
+    text-decoration: none;
+    height: 8.2rem;
+}
+.header__efecto{
+    font-size: 6rem;
+}
+.header__navegacion{
+    justify-content: center;
+    align-items: center;   
+    display: none;
+    right: 0;
+}
+@media (min-width: 768px ) { 
+    .header__navegacion{
+        display: flex;
+    }
+}
+
+.header__navegacion ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul li {
+    list-style: none;
+}
+li a{
+    position: relative;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    transition: .7s;
+}
+
+.principal{
+    background: url(../img/fondo1.jpg);
+    width: 100%;   
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-repeat:  no-repeat;
+}
