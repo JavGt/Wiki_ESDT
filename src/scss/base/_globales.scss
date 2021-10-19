@@ -1,0 +1,23 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html { 
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/ 
+} 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
