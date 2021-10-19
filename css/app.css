@@ -1,0 +1,24 @@
+/* apply a natural box layout model to all elements, but allowing components to change */ 
+html { 
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/ 
+} 
+@media (min-width: 2600px ) {
+    html{
+        font-size: 100%; /*1rem = */
+    }
+    }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*{
+    font-size: 1.6rem;
+}
+
+/* utilidades */
+.conteiner{
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%;
+}
