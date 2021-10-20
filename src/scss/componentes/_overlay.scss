@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* OVERLAY
+=========================== */
+.overlay {
+    position: fixed;
+    height: 100vh;
+    z-index: 99;
+    top: 0;
+    background: black;
+
+    
+    &.first {
+      width: 100%;
+    }
+    
+    &.second {
+      left: 33.3%;
+      width: 66.6%;
+    }
+    
+    &.third {
+      left: 66.6%;
+      width: 33.3%;
+    }
+  }
+  

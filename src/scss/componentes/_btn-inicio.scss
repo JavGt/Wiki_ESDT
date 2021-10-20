@@ -2,15 +2,16 @@
 @use 'base/mixins' as m;
 
 .toggle-btn {
-    margin: 1.4em;
+    margin: 1em 1.4em;
     padding: 1em;
     width: 40px;
     height: 12px;
     z-index: 1;
     position: relative;
+    cursor: pointer;
 
     @include m.tablet{
-        // display: none;
+        display: none;
     }
     span.one,
     span.two {
@@ -24,12 +25,5 @@
 
     span.two {
         margin-top: 12px;
-    }
-}
-
-.scroll{
-    span.one,
-    span.two{
-        background: #000;
     }
 }
