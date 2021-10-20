@@ -1,6 +1,9 @@
 @use 'variables' as v;
 @use 'mixins' as m;
 
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
 html { 
     box-sizing: border-box;
     font-size: 62.5%; /*1rem = 10px*/ 
@@ -8,11 +11,18 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+*{
+    font-size: 1.6rem;
+}
 
 .contenedor {
     width: 95%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 1rem;
+    
+    @include m.tablet{
+        margin: 0 auto;
+    }
 }
 a {
     text-decoration: none;

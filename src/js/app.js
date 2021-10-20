@@ -1,10 +1,10 @@
 window.addEventListener('DOMContentLoaded',function(){
     iniciarApp();
-    efectoHeader();
 })
 
 function iniciarApp(){
     efectoScroll();
+    efectoHeader();
 }
 
 function efectoScroll(){
@@ -17,8 +17,8 @@ function efectoScroll(){
 function efectoHeader(){
     const typed = new Typed('.typed', {
         strings: [
-            '<span class="header__efecto">El sonido del Tiempo</span>',
-            '<span class="header__efecto">Wiki</span>'
+            '<h1 class="header__efecto">El sonido del Tiempo</h1>',
+            '<h1 class="header__efecto">Wiki</h1>'
         ],
 
         //stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
